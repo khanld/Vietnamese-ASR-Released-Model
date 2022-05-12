@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/wav2vec2-base-vietnamese-160h/speech-recognition-on-common-voice-vi)](https://paperswithcode.com/sota/speech-recognition-on-common-voice-vi?p=wav2vec2-base-vietnamese-160h)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/wav2vec2-base-vietnamese-160h/speech-recognition-on-vivos)](https://paperswithcode.com/sota/speech-recognition-on-vivos?p=wav2vec2-base-vietnamese-160h)
 # Vietnamese Speech Recognition using Wav2vec 2.0
 ### Table of contents
 1. [Model Description](#description)
