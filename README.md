@@ -89,7 +89,7 @@ print("WER: {:2f}".format(100 * wer.compute(predictions=result["pred_transcript"
 
 <a name = "citation" ></a>
 ### Citation 
-[![DOI](https://zenodo.org/badge/485623832.svg)](https://github.com/khanld/ASR-Wa2vec-Finetune)
+[![DOI](https://zenodo.org/badge/491468343.svg)](https://zenodo.org/badge/latestdoi/491468343)
 ```text
 @misc{Khanhld_Vietnamese_Wav2vec_Asr_2022,
   author = {Duy Khanh Le},
