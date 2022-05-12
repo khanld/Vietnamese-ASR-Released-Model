@@ -90,7 +90,8 @@ print("WER: {:2f}".format(100 * wer.compute(predictions=result["pred_transcript"
 <a name = "citation" ></a>
 ### Citation 
 [![DOI](https://zenodo.org/badge/491468343.svg)](https://zenodo.org/badge/latestdoi/491468343)
-####BibTeX
+</br>
+<strong>BibTeX</strong>
 ```
 @mics{Duy_Khanh_Finetune_Wav2vec_2_0_2022,
   author = {Duy Khanh, Le},
@@ -102,7 +103,7 @@ print("WER: {:2f}".format(100 * wer.compute(predictions=result["pred_transcript"
   year = {2022}
 }
 ```
-####APA
+<strong>APA</strong>
 ```
 Duy Khanh, L. (2022). Finetune Wav2vec 2.0 For Vietnamese Speech Recognition [Data set]. https://doi.org/10.5281/zenodo.6542357
 ```
