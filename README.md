@@ -90,6 +90,7 @@ print("WER: {:2f}".format(100 * wer.compute(predictions=result["pred_transcript"
 <a name = "citation" ></a>
 ### Citation 
 [![DOI](https://zenodo.org/badge/491468343.svg)](https://zenodo.org/badge/latestdoi/491468343)
+```
 @mics{Duy_Khanh_Finetune_Wav2vec_2_0_2022,
   author = {Duy Khanh, Le},
   doi = {10.5281/zenodo.6542357},
@@ -99,6 +100,7 @@ print("WER: {:2f}".format(100 * wer.compute(predictions=result["pred_transcript"
   url = {https://github.com/khanld/ASR-Wa2vec-Finetune},
   year = {2022}
 }
+```
 
 <a name = "contact"></a>
 ### Contact
