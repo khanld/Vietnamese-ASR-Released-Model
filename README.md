@@ -101,6 +101,7 @@ BibTeX
   url = {https://github.com/khanld/ASR-Wa2vec-Finetune},
   year = {2022}
 }
+```
 APA
 ```
 Duy Khanh, L. (2022). Finetune Wav2vec 2.0 For Vietnamese Speech Recognition [Data set]. https://doi.org/10.5281/zenodo.6542357
