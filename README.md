@@ -96,7 +96,7 @@ print("WER: {:2f}".format(100 * wer.compute(predictions=result["pred_transcript"
   doi = {10.5281/zenodo.6542357},
   license = {CC-BY-NC-4.0},
   month = {5},
-  title = {{Finetune Wav2vec 2.0 For Speech Recognition}},
+  title = {{Finetune Wav2vec 2.0 For Vietnamese Speech Recognition}},
   url = {https://github.com/khanld/ASR-Wa2vec-Finetune},
   year = {2022}
 }
