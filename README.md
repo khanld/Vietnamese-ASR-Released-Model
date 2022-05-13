@@ -31,16 +31,20 @@ We also provide code for Pre-training and Fine-tuning the Wav2vec2 model. If you
 from transformers import Wav2Vec2Processor, Wav2Vec2ForCTC
 import librosa
 import torch
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 processor = Wav2Vec2Processor.from_pretrained("khanhld/wav2vec2-base-vietnamese-160h")
 model = Wav2Vec2ForCTC.from_pretrained("khanhld/wav2vec2-base-vietnamese-160h")
 model.to(device)
+
 def transcribe(wav):
   input_values = processor(wav, sampling_rate=16000, return_tensors="pt").input_values
   logits = model(input_values.to(device)).logits
   pred_ids = torch.argmax(logits, dim=-1)
   pred_transcript = processor.batch_decode(pred_ids)[0]
   return pred_transcript
+  
 wav, _ = librosa.load('path/to/your/audio/file', sr = 16000)
 print(f"transcript: {transcribe(wav)}")
 ```
@@ -54,23 +58,28 @@ from datasets import load_dataset
 import torch
 import re
 from datasets import load_dataset, load_metric, Audio
+
 wer = load_metric("wer")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 # load processor and model
 processor = Wav2Vec2Processor.from_pretrained("khanhld/wav2vec2-base-vietnamese-160h")
 model = Wav2Vec2ForCTC.from_pretrained("khanhld/wav2vec2-base-vietnamese-160h")
 model.to(device)
 model.eval()
+
 # Load dataset
 test_dataset = load_dataset("mozilla-foundation/common_voice_8_0", "vi", split="test", use_auth_token="your_huggingface_auth_token")
 test_dataset = test_dataset.cast_column("audio", Audio(sampling_rate=16000))
 chars_to_ignore = r'[,?.!\-;:"“%\'�]' # ignore special characters
+
 # preprocess data
 def preprocess(batch):
   audio = batch["audio"]
   batch["input_values"] = audio["array"]
   batch["transcript"] = re.sub(chars_to_ignore, '', batch["sentence"]).lower()
   return batch
+  
 # run inference
 def inference(batch):
   input_values = processor(batch["input_values"], 
