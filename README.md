@@ -15,7 +15,7 @@ Fine-tuned the Wav2vec2-based model on about 160 hours of Vietnamese speech data
 <a name = "implementation" ></a>
 ### Implementation
 We also provide code for Pre-training and Fine-tuning the Wav2vec2 model. If you wish to train on your dataset, check it out here:
-- [Pre-train code](https://github.com/khanld/ASR-Wav2vec-Pretrain) (not available for now but will release soon)
+- [Pre-train code](https://github.com/khanld/Wav2vec2-Pretraining)
 - [Fine-tune code](https://github.com/khanld/ASR-Wa2vec-Finetune)
 
 <a name = "benchmark" ></a>
